@@ -1,0 +1,70 @@
+﻿@model Persona
+<div class="container">
+<table class="table table-hover">
+    <tbody>
+    <tr>
+        <th>Id</th>
+        <td>@Model.ID</td>
+    </tr>
+    <tr>
+        <th>Nome</th>
+        <td>@Model.Nome</td>
+    </tr>
+    <tr>
+        <th>Cognome</th>
+        <td>@Model.Cognome</td>
+    </tr>
+    @if (Model.Indirizzo != null)
+    {
+        <tr>
+            <th>Indirizzo</th>
+            <td>@Model.Indirizzo</td>
+        </tr>
+    }
+    @if (Model.Emails != null)
+    {
+        <tr>
+            <th>Emails</th>
+            <td>
+                @foreach (string email in Model.Emails)
+                {
+                    @email
+                    <br />
+                }
+            </td>
+        </tr>
+    }
+    @if (Model.NumeriTelefono != null)
+    {
+        <tr>
+            <th>Numeri Cellulare</th>
+            <td>
+                @foreach (string numeroCell in Model.NumeriTelefono)
+                {
+                    @numeroCell
+                    <br />
+                }
+            </td>
+        </tr>
+    }
+    @if (Model.SitiWeb != null)
+    {
+        <tr>
+            <th>Siti Web</th>
+            <td>
+                @foreach (string sitoWeb in Model.SitiWeb)
+                {
+                    @sitoWeb
+                    <br />
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+    </div>
+    <div class="container" align="center">
+        <a href="/Default/Index" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-arrow-left"></span> Indietro
+        </a>
+    </div>

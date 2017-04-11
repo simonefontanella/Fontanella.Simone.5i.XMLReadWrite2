@@ -1,0 +1,65 @@
+﻿@model List<Persona>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>XMLReadWrite</h2>
+
+@using (Html.BeginForm("AddContact", "Default", FormMethod.Post))
+{
+    <button class="btn-default" type="submit" name="AddContatto">Aggiungi Contatto</button>
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr class="alert-info">
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Indirizzo</th>
+            <th>Numeri</th>
+            <th>Siti Web</th>
+            <th>Email</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+
+    @foreach (Persona item in Model)
+    {
+        <tbody>
+            <tr class="active">
+                <td>@item.Nome</td>
+                <td>@item.Cognome</td>
+                <td>@item.Indirizzo</td>
+                <td>
+                    <select>
+                        @foreach (string numero in item.NumeriTelefono)
+                        {
+                            <option>@numero</option>
+                        }
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        @foreach (string siti in item.SitiWeb)
+                        {
+                            <option>@siti</option>
+                        }
+                    </select>
+                </td>
+
+                <td>
+                    <select>
+                        @foreach (string email in item.Emails)
+                        {
+                            <option>@email</option>
+                        }
+                    </select>
+                </td>
+                <td>
+                    @Html.ActionLink("Dettagli profilo", "ContactDetails", new { id = item.ID })                  
+                    @Html.ActionLink("| Edit", "Modifica", new { id = item.ID })                             
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>

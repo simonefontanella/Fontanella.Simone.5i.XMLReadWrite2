@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rubrica>
+  <Persona nome="Marco" cognome="Avagnano" indirizzo="Via Roma">
+    <NumeriCellulare>
+      <NumeroCellulare>3232142143</NumeroCellulare>
+      <NumeroCellulare>3451412432</NumeroCellulare>
+    </NumeriCellulare>
+    <Emails>
+      <Email>arato@gmail.com</Email>
+      <Email>fotonico@gmail.com</Email>
+    </Emails>
+    <SitiWeb>
+      <SitoWeb>www.google.it</SitoWeb>
+      <SitoWeb>www.yahoo.com</SitoWeb>
+    </SitiWeb>
+  </Persona>
+  <Persona nome="Massimiliano" cognome="Conti" indirizzo="Via Losanna">
+    <NumeriCellulare>
+      <NumeroCellulare>234343242</NumeroCellulare>
+      <NumeroCellulare>23423414</NumeroCellulare>
+    </NumeriCellulare>
+    <Emails>
+      <Email>haipresolascoccia@gmail.com</Email>
+      <Email>arfly@gmail.com</Email>
+    </Emails>
+    <SitiWeb>
+      <SitoWeb>www.google.it</SitoWeb>
+      <SitoWeb>www.google.com</SitoWeb>
+    </SitiWeb>
+  </Persona>
+  <Persona nome="a" cognome="a" indirizzo="a">
+    <NumeriCellulare>
+      <NumeroCellulare>a</NumeroCellulare>
+    </NumeriCellulare>
+    <Emails>
+      <Email>a</Email>
+    </Emails>
+    <SitiWeb>
+      <SitoWeb>a</SitoWeb>
+    </SitiWeb>
+  </Persona>
+  <Persona nome="Simone" cognome="Fontanella" indirizzo="via triggered">
+    <NumeriCellulare>
+      <NumeroCellulare>123213</NumeroCellulare>
+      <NumeroCellulare>1232131</NumeroCellulare>
+      <NumeroCellulare>321312</NumeroCellulare>
+    </NumeriCellulare>
+    <Emails>
+      <Email>ciao@email.it</Email>
+      <Email>bella@email.com</Email>
+    </Emails>
+    <SitiWeb>
+      <SitoWeb>www.google.com</SitoWeb>
+    </SitiWeb>
+  </Persona>
+</Rubrica>

@@ -1,0 +1,60 @@
+﻿@model Persona
+@{
+    ViewBag.Title = "AddContact";
+}
+
+@using (Html.BeginForm("Edit", "Default", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    <fieldset>
+        <div class="form-group">
+            <label class="col-sm-2 col-lg-2 control-label">Nome</label>
+            <div class="col-sm-5 col-lg-5">
+                <input type="text" class="form-control" required="required" name="Nome" value="@Model.Nome" id="Nome" placeholder="Inserisci il nome...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 col-lg-2 control-label">Cognome</label>
+            <div class="col-sm-5 col-lg-5">
+                <input type="text" class="form-control" required="required" name="Cognome" id="Cognome" value="@Model.Cognome" placeholder="Inserisci il cognome...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 col-lg-2 control-label">Indirizzo</label>
+            <div class="col-sm-5 col-lg-5">
+                <input type="text" class="form-control" required="required" name="Indirizzo" id="Indirizzo"  value="@Model.Indirizzo" placeholder="Inserisci l'indirizzo...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="stato" class="col-sm-2 col-lg-2 control-label">Numeri di telefono(separati da virgola)</label>
+            <div class="col-sm-5 col-lg-5">
+                <input type="text" class="form-control" required="required" name="NumeriCellulare" id="NumeriCellulare"  value="@Model.NumeriTelefono" placeholder="Inserisci il numero...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 col-lg-2 control-label">Siti Web(separati da virgola)</label>
+            <div class="col-sm-5 col-lg-5">
+                <input type="text" class="form-control" required="required" name="SitiWeb" id="SitiWeb"  value="@Model.SitiWeb" placeholder="Inserisci il Sito Web...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 col-lg-2 control-label">Email(separati da virgola)</label>
+            <div class="col-sm-5 col-lg-5">
+                <input type="text" class="form-control" required="required" name="Emails" id="Emails"  value="@Model.Emails" placeholder="Inserisci l'indirizzo email...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-5 col-lg-5 col-sm-offset-2">
+                <button type="submit" class="btn btn-default">Invia</button>
+            </div>
+        </div>
+    </fieldset>
+
+}
+
